@@ -14,11 +14,11 @@
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
         <Grid Margin="10">
             <StackPanel>
-                <!-- Title of the available tests -->
+               
                 <TextBlock Text="Доступные тесты" FontSize="24" FontWeight="SemiBold" Foreground="#333"
                            HorizontalAlignment="Center" Margin="0,0,0,20" />
 
-                <!-- List of Tests -->
+                
                 <ListBox ItemsSource="{Binding Tests}" SelectedItem="{Binding SelectedTest, Mode=TwoWay}" 
                          BorderBrush="#DDD" Background="White" Padding="10" Margin="0,0,0,20" 
                          ScrollViewer.VerticalScrollBarVisibility="Auto">
@@ -30,9 +30,9 @@
                     </ListBox.ItemTemplate>
                 </ListBox>
 
-                <!-- Button Panel -->
+                
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
-                    <!-- Create Test Button -->
+                    
                     <Button Content="Создать тест" Command="{Binding CreateTestCommand}" 
                             Width="150" Height="35" Margin="0,0,10,0" Background="#4CAF50" 
                             Foreground="White" FontWeight="Bold" BorderBrush="Transparent">
@@ -48,7 +48,7 @@
                         </Button.Template>
                     </Button>
 
-                    <!-- Take Test Button -->
+                   
                     <Button Content="Пройти тест" Command="{Binding TakeTestCommand}" 
                             Width="150" Height="35" Margin="0,0,10,0" Background="#2196F3" 
                             Foreground="White" FontWeight="Bold" BorderBrush="Transparent">
@@ -64,7 +64,7 @@
                         </Button.Template>
                     </Button>
 
-                    <!-- Delete Test Button -->
+                   
                     <Button Content="Удалить тест" Command="{Binding DeleteTestCommand}" 
                             CommandParameter="{Binding SelectedTest, Mode=TwoWay}" Width="150" 
                             Height="35" Background="#F44336" Foreground="White" 
